@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
 
 // 1. Rota de Soma
 app.get('/soma/:numUm/:numDois', (req, res) => {
-  const numUm = parseInt(req.params.numUm);
-  const numDois = parseInt(req.params.numDois);
+  const numUm = parseFloat(req.params.numUm);
+  const numDois = parseFloat(req.params.numDois);
   
   if (isNaN(numUm) || isNaN(numDois)) {
     return res.status(400).send('Erro: Um dos parâmetros não é um número válido.');
@@ -21,8 +21,8 @@ app.get('/soma/:numUm/:numDois', (req, res) => {
 
 // 2. Rota de Subtração
 app.get('/subtracao/:numUm/:numDois', (req, res) => {
-  const numUm = parseInt(req.params.numUm);
-  const numDois = parseInt(req.params.numDois);
+  const numUm = parseFloat(req.params.numUm);
+  const numDois = parseFloat(req.params.numDois);
 
   if (isNaN(numUm) || isNaN(numDois)) {
     return res.status(400).send('Erro: Um dos parâmetros não é um número válido.');
@@ -34,8 +34,8 @@ app.get('/subtracao/:numUm/:numDois', (req, res) => {
 
 // 3. Rota de Multiplicação
 app.get('/multiplicacao/:numUm/:numDois', (req, res) => {
-  const numUm = parseInt(req.params.numUm);
-  const numDois = parseInt(req.params.numDois);
+  const numUm = parseFloat(req.params.numUm);
+  const numDois = parseFloat(req.params.numDois);
   
   if (isNaN(numUm) || isNaN(numDois)) {
     return res.status(400).send('Erro: Um dos parâmetros não é um número válido.');
@@ -47,8 +47,8 @@ app.get('/multiplicacao/:numUm/:numDois', (req, res) => {
 
 // 4. Rota de Divisão
 app.get('/divisao/:numUm/:numDois', (req, res) => {
-  const numUm = parseInt(req.params.numUm);
-  const numDois = parseInt(req.params.numDois);
+  const numUm = parseFloat(req.params.numUm);
+  const numDois = parseFloat(req.params.numDois);
   
   if (isNaN(numUm) || isNaN(numDois)) {
     return res.status(400).send('Erro: Um dos parâmetros não é um número válido.');
