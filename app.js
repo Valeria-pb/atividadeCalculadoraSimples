@@ -63,6 +63,6 @@ app.get('/divisao/:numUm/:numDois', (req, res) => {
 });
 
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
